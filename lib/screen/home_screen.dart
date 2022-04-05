@@ -45,6 +45,13 @@ class HomeScreen extends StatelessWidget {
                           "minTemp".tr+"${homeScreenVM.weatherResponse!.main!.tempMin} °C",
                           style: normalTextStyle(fontSize: 14),
                         ),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          "${homeScreenVM.weatherResponse!.name}",
+                          style: normalTextStyle(fontSize: 14),
+                        ),
                       ],
                     ),
                   )),
